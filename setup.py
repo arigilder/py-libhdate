@@ -3,7 +3,7 @@
 
 __author__ = "Royi Reshef"
 __maintainer__ = "Tsvi Mostovicz"
-__version__ = "0.8.2"
+__version__ = "0.8.7"
 
 from codecs import open
 from os.path import abspath, dirname, join
@@ -36,7 +36,8 @@ setup(name='hdate',
       license='GPLv3+',
       packages=['hdate'],
       install_requires=[
-          'python-dateutil'
+          'python-dateutil',
+          'six'
       ],
       extras_require={
         'dev': ['tox'],
